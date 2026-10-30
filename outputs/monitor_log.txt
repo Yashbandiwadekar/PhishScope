@@ -1,0 +1,18 @@
+18:11:03Z poll openphish: 300 entries, 300 new
+18:11:04Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:12:50Z total stored: 258
+18:17:51Z poll openphish: 300 entries, 0 new
+18:17:51Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:17:51Z total stored: 258
+18:22:52Z poll openphish: 300 entries, 0 new
+18:22:52Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:22:52Z total stored: 258
+18:27:53Z poll openphish: 300 entries, 0 new
+18:27:54Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:27:54Z total stored: 258
+18:32:54Z poll openphish: 300 entries, 0 new
+18:32:55Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:32:55Z total stored: 258
+18:37:56Z poll openphish: 300 entries, 0 new
+18:37:56Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:37:56Z total stored: 258

@@ -1,0 +1,29 @@
+18:40:39Z poll openphish: 300 entries, 0 new
+18:40:39Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:40:39Z poll phishstats: 89 entries, 48 new
+18:41:06Z total stored: 306
+18:51:06Z poll openphish: 300 entries, 0 new
+18:51:06Z poll phishdb_new_last_hour: 0 entries, 0 new
+18:51:06Z poll phishstats: 89 entries, 0 new
+18:51:51Z total stored: 306
+19:01:51Z poll openphish: 300 entries, 0 new
+19:01:51Z poll phishdb_new_last_hour: 0 entries, 0 new
+19:01:51Z poll phishstats: 89 entries, 0 new
+19:02:35Z total stored: 306
+19:12:35Z poll openphish: 300 entries, 0 new
+19:12:35Z poll phishdb_new_last_hour: 0 entries, 0 new
+19:12:35Z poll phishstats: 89 entries, 0 new
+19:13:19Z total stored: 306
+19:23:19Z poll openphish: 300 entries, 0 new
+19:23:19Z poll phishdb_new_last_hour: 0 entries, 0 new
+19:23:19Z poll phishstats: 89 entries, 0 new
+19:23:21Z total stored: 306
+--- restarted 19:27:34Z (User-Agent without e-mail address) ---
+19:27:35Z poll openphish: 300 entries, 0 new
+19:27:35Z poll phishdb_new_last_hour: 0 entries, 0 new
+19:27:35Z poll phishstats: 89 entries, 0 new
+19:27:37Z total stored: 306
+19:37:37Z poll openphish: 300 entries, 0 new
+19:37:37Z poll phishdb_new_last_hour: 0 entries, 0 new
+19:37:37Z poll phishstats: 89 entries, 0 new
+19:37:39Z total stored: 306

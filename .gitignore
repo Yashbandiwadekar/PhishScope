@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# Raw feed snapshots: re-download with src/collect_raw.py (OpenPhish terms: keep raw data local)
+data/raw/*/openphish_feed.txt
+data/raw/*/phishdb_domains.txt
+data/raw/*/urlhaus_recent.csv

@@ -1,0 +1,376 @@
+{
+  "corpus_name_rules": {
+    "n": 100000,
+    "positives": 50000,
+    "roc_auc": 0.6193547161999999,
+    "levels": {
+      "MEDIUM+ (score>=25)": {
+        "tp": 1689,
+        "fp": 1157,
+        "fn": 48311,
+        "tn": 48843,
+        "recall": 0.03378,
+        "fpr": 0.02314,
+        "precision": 0.5934645115952214,
+        "recall_ci95": [
+          0.032231897689091134,
+          0.03539973803707275
+        ],
+        "fpr_ci95": [
+          0.021858317893643307,
+          0.024494952691871068
+        ],
+        "precision_at_1pct_prevalence": 0.014531282263060085
+      },
+      "HIGH (score>=50)": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 49999,
+        "tn": 49998,
+        "recall": 2e-05,
+        "fpr": 4e-05,
+        "precision": 0.3333333333333333,
+        "recall_ci95": [
+          3.5304090094471416e-06,
+          0.00011329261524395344
+        ],
+        "fpr_ci95": [
+          1.0969281687106627e-05,
+          0.00014585066952240206
+        ],
+        "precision_at_1pct_prevalence": 0.0050251256281407045
+      }
+    },
+    "score_mean_phishing": 4.84152,
+    "score_mean_benign": 1.87166
+  },
+  "subset_live_names": {
+    "n": 1401,
+    "phishing": 328,
+    "roc_auc": 0.6441877116814039,
+    "levels": {
+      "MEDIUM+ (score>=25)": {
+        "tp": 95,
+        "fp": 121,
+        "fn": 233,
+        "tn": 952,
+        "recall": 0.2896341463414634,
+        "fpr": 0.11276794035414725,
+        "precision": 0.4398148148148148,
+        "recall_ci95": [
+          0.2432046157058873,
+          0.34093432287203657
+        ],
+        "fpr_ci95": [
+          0.09520634635134631,
+          0.13309241179469858
+        ],
+        "precision_at_1pct_prevalence": 0.025287474941373792
+      },
+      "HIGH (score>=50)": {
+        "tp": 18,
+        "fp": 7,
+        "fn": 310,
+        "tn": 1066,
+        "recall": 0.054878048780487805,
+        "fpr": 0.0065237651444548,
+        "precision": 0.72,
+        "recall_ci95": [
+          0.03499126350756856,
+          0.08507083841093716
+        ],
+        "fpr_ci95": [
+          0.003163608522524567,
+          0.013404844999330458
+        ],
+        "precision_at_1pct_prevalence": 0.07831545142690316
+      }
+    }
+  },
+  "rule_firing_table": [
+    {
+      "rule": "N1",
+      "title": "Looks like a misspelt brand",
+      "points": 25,
+      "fires_on_phishing": 0.024390243902439025,
+      "fires_on_benign": 0.0260950605778192,
+      "lift": 0.9346689895470384
+    },
+    {
+      "rule": "N2",
+      "title": "Contains a famous brand name",
+      "points": 15,
+      "fires_on_phishing": 0.024390243902439025,
+      "fires_on_benign": 0.017707362534948742,
+      "lift": 1.3774069319640565
+    },
+    {
+      "rule": "N3",
+      "title": "Brand in the subdomain, not the registered name",
+      "points": 25,
+      "fires_on_phishing": 0.0,
+      "fires_on_benign": 0.0,
+      "lift": Infinity
+    },
+    {
+      "rule": "N4",
+      "title": "Credential/scam keywords in the name",
+      "points": 10,
+      "fires_on_phishing": 0.027439024390243903,
+      "fires_on_benign": 0.015843429636533086,
+      "lift": 1.731886657101865
+    },
+    {
+      "rule": "N5",
+      "title": "Several scam keywords",
+      "points": 10,
+      "fires_on_phishing": 0.009146341463414634,
+      "fires_on_benign": 0.0,
+      "lift": Infinity
+    },
+    {
+      "rule": "N6",
+      "title": "Many hyphens",
+      "points": 8,
+      "fires_on_phishing": 0.012195121951219513,
+      "fires_on_benign": 0.003727865796831314,
+      "lift": 3.2713414634146343
+    },
+    {
+      "rule": "N7",
+      "title": "Mostly digits or machine-generated look",
+      "points": 8,
+      "fires_on_phishing": 0.07317073170731707,
+      "fires_on_benign": 0.06150978564771668,
+      "lift": 1.1895787139689578
+    },
+    {
+      "rule": "N8",
+      "title": "Punycode / look-alike characters",
+      "points": 10,
+      "fires_on_phishing": 0.0,
+      "fires_on_benign": 0.0027958993476234857,
+      "lift": 0.0
+    },
+    {
+      "rule": "N9",
+      "title": "Frequently abused top-level domain",
+      "points": 8,
+      "fires_on_phishing": 0.01524390243902439,
+      "fires_on_benign": 0.023299161230195712,
+      "lift": 0.6542682926829269
+    },
+    {
+      "rule": "N10",
+      "title": "Free hosting / shared platform",
+      "points": 10,
+      "fires_on_phishing": 0.0,
+      "fires_on_benign": 0.0,
+      "lift": Infinity
+    },
+    {
+      "rule": "R1",
+      "title": "Registered in the last 30 days",
+      "points": 30,
+      "fires_on_phishing": 0.006097560975609756,
+      "fires_on_benign": 0.0009319664492078285,
+      "lift": 6.5426829268292686
+    },
+    {
+      "rule": "R2",
+      "title": "Registered in the last 90 days",
+      "points": 15,
+      "fires_on_phishing": 0.021341463414634148,
+      "fires_on_benign": 0.02702702702702703,
+      "lift": 0.7896341463414634
+    },
+    {
+      "rule": "R3",
+      "title": "Registered in the last year",
+      "points": 6,
+      "fires_on_phishing": 0.07926829268292683,
+      "fires_on_benign": 0.10810810810810811,
+      "lift": 0.7332317073170731
+    },
+    {
+      "rule": "R4",
+      "title": "Registry hold / pending-delete status",
+      "points": 20,
+      "fires_on_phishing": 0.003048780487804878,
+      "fires_on_benign": 0.0,
+      "lift": Infinity
+    },
+    {
+      "rule": "D1",
+      "title": "No mail setup at all",
+      "points": 6,
+      "fires_on_phishing": 0.3018292682926829,
+      "fires_on_benign": 0.2637465051258155,
+      "lift": 1.1443915366715502
+    },
+    {
+      "rule": "D2",
+      "title": "Very few DNS records",
+      "points": 5,
+      "fires_on_phishing": 0.35365853658536583,
+      "fires_on_benign": 0.2479030754892824,
+      "lift": 1.4266000366770584
+    },
+    {
+      "rule": "D3",
+      "title": "Very low TTL",
+      "points": 4,
+      "fires_on_phishing": 0.08231707317073171,
+      "fires_on_benign": 0.13513513513513514,
+      "lift": 0.6091463414634146
+    },
+    {
+      "rule": "D4",
+      "title": "Hosting IP exposes known vulnerabilities",
+      "points": 6,
+      "fires_on_phishing": 0.21951219512195122,
+      "fires_on_benign": 0.13513513513513514,
+      "lift": 1.624390243902439
+    },
+    {
+      "rule": "D5",
+      "title": "No www host",
+      "points": 3,
+      "fires_on_phishing": 0.08536585365853659,
+      "fires_on_benign": 0.06896551724137931,
+      "lift": 1.2378048780487807
+    },
+    {
+      "rule": "G1",
+      "title": "Shares an IP with known phishing names",
+      "points": 25,
+      "fires_on_phishing": 0.14939024390243902,
+      "fires_on_benign": 0.01863932898415657,
+      "lift": 8.014786585365854
+    },
+    {
+      "rule": "G2",
+      "title": "Shares a rare name-server set with known phishing names",
+      "points": 15,
+      "fires_on_phishing": 0.2774390243902439,
+      "fires_on_benign": 0.07082945013979497,
+      "lift": 3.9170009627727858
+    }
+  ],
+  "subset_learned_weights_cv": {
+    "roc_auc": 0.6792856249857931
+  },
+  "subset_rule_group_auc": {
+    "name": 0.5107545518605232,
+    "registry": 0.4874965903666493,
+    "dns": 0.5665887186597868,
+    "campaign": 0.6345356079376265,
+    "all but registry (no RDAP)": 0.6489342054417748
+  },
+  "subset_all_rules_auc": 0.6441877116814039,
+  "cross_feed_openphish_live": {
+    "n": 1404,
+    "positives": 62,
+    "roc_auc": 0.7889224075765588,
+    "levels": {
+      "MEDIUM+ (score>=25)": {
+        "tp": 30,
+        "fp": 150,
+        "fn": 32,
+        "tn": 1192,
+        "recall": 0.4838709677419355,
+        "fpr": 0.11177347242921014,
+        "precision": 0.16666666666666666,
+        "recall_ci95": [
+          0.3640965420650529,
+          0.6055275253938182
+        ],
+        "fpr_ci95": [
+          0.09601108308001004,
+          0.12975218653507692
+        ],
+        "precision_at_1pct_prevalence": 0.0418956043956044
+      },
+      "HIGH (score>=50)": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 50,
+        "tn": 1334,
+        "recall": 0.1935483870967742,
+        "fpr": 0.005961251862891207,
+        "precision": 0.6,
+        "recall_ci95": [
+          0.11433696420146607,
+          0.3085203175170827
+        ],
+        "fpr_ci95": [
+          0.0030236724855818844,
+          0.011719221477570986
+        ],
+        "precision_at_1pct_prevalence": 0.24696356275303646
+      }
+    }
+  },
+  "cross_feed_openphish_name_rules_all": {
+    "n": 1578,
+    "positives": 78,
+    "roc_auc": 0.5823974358974359,
+    "levels": {
+      "MEDIUM+ (score>=25)": {
+        "tp": 5,
+        "fp": 22,
+        "fn": 73,
+        "tn": 1478,
+        "recall": 0.0641025641025641,
+        "fpr": 0.014666666666666666,
+        "precision": 0.18518518518518517,
+        "recall_ci95": [
+          0.027688907083923672,
+          0.14143779620633457
+        ],
+        "fpr_ci95": [
+          0.009705338044289039,
+          0.022107586933979944
+        ],
+        "precision_at_1pct_prevalence": 0.04228115275334867
+      },
+      "HIGH (score>=50)": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 78,
+        "tn": 1500,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "precision": 0.0,
+        "recall_ci95": [
+          0.0,
+          0.04693945377411976
+        ],
+        "fpr_ci95": [
+          2.1628651032505772e-19,
+          0.0025545243594804127
+        ],
+        "precision_at_1pct_prevalence": NaN
+      }
+    }
+  },
+  "urlhaus_malware_live": {
+    "n": 226,
+    "recall_medium_plus": 0.3495575221238938,
+    "recall_high": 0.06637168141592921,
+    "recall_medium_ci95": [
+      0.2903746853888765,
+      0.41376938600637997
+    ]
+  },
+  "shared_platform_phishing_name_rules": {
+    "n": 3000,
+    "recall_medium_plus": 0.15533333333333332,
+    "recall_high": 0.0013333333333333333
+  },
+  "ml_comparison": {
+    "lexical_ml_template_grouped_auc": 0.7878082206692625,
+    "enriched_ml_all_features_cv_auc": 0.7670623735594299,
+    "enriched_ml_crossfeed_auc": 0.7392553242632566
+  }
+}

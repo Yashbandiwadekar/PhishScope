@@ -1,0 +1,159 @@
+{
+  "names_total": 8400,
+  "names_with_dns": 4357,
+  "phishing_with_dns": 1479,
+  "benign_with_dns": 2878,
+  "edges": 15324,
+  "linked_nodes": 2546,
+  "edge_group_stats": {
+    "ip": {
+      "groups_used": 295,
+      "hub_groups_pruned": 1
+    },
+    "prefix24": {
+      "groups_used": 597,
+      "hub_groups_pruned": 1
+    },
+    "nsset": {
+      "groups_used": 185,
+      "hub_groups_pruned": 0
+    },
+    "bulkreg": {
+      "groups_used": 12,
+      "hub_groups_pruned": 0
+    }
+  },
+  "common_dns_providers_ignored": [
+    "afternic.com",
+    "akam.net",
+    "alidns.com",
+    "azure-dns.com",
+    "beget.com",
+    "cloudflare.com",
+    "cscdns.net",
+    "digitalocean.com",
+    "dns-parking.com",
+    "dnsmadeeasy.com",
+    "domaincontrol.com",
+    "dreamhost.com",
+    "googledomains.com",
+    "hichina.com",
+    "hostgator.com",
+    "namebrightdns.com",
+    "nic.ru",
+    "ovh.net",
+    "registrar-servers.com",
+    "share-dns.com",
+    "siteground.net",
+    "spaceship.net",
+    "wixdns.net",
+    "worldnic.com",
+    "xserver.jp"
+  ],
+  "share_of_names_linked_by_signal": {
+    "ip": {
+      "phishing": 0.25625422582826235,
+      "benign": 0.11605281445448228
+    },
+    "prefix24": {
+      "phishing": 0.4935767410412441,
+      "benign": 0.48019457956914524
+    },
+    "nsset": {
+      "phishing": 0.18052738336713997,
+      "benign": 0.12612925642807504
+    },
+    "bulkreg": {
+      "phishing": 0.0033806626098715348,
+      "benign": 0.0118137595552467
+    }
+  },
+  "clusters_ge3": 188,
+  "names_in_clusters_ge3": 2238,
+  "baseline_phishing_share_in_sample": 0.33945375258205185,
+  "phishing_share_inside_clusters": 0.34048257372654156,
+  "pure_phishing_clusters_share": 0.1595744680851064,
+  "largest_clusters": [
+    {
+      "cluster": 1,
+      "size": 470,
+      "phishing": 119,
+      "phishing_share": 0.2531914893617021,
+      "density": 0.03278138184457651,
+      "top_signal": "prefix24",
+      "top_ip": "178.63.243.206",
+      "example_names_defanged": "3656uu[.]com, desimmstory[.]com, nonprofitlight[.]com"
+    },
+    {
+      "cluster": 2,
+      "size": 342,
+      "phishing": 73,
+      "phishing_share": 0.2134502923976608,
+      "density": 0.03824321311587865,
+      "top_signal": "prefix24",
+      "top_ip": "104.21.6.186",
+      "example_names_defanged": "ithaliano[.]com, thenesavu[.]com, unirajuniversity[.]com"
+    },
+    {
+      "cluster": 3,
+      "size": 142,
+      "phishing": 8,
+      "phishing_share": 0.056338028169014086,
+      "density": 0.23164519029068026,
+      "top_signal": "prefix24",
+      "top_ip": "104.26.12.89",
+      "example_names_defanged": "farmaciasloshidalgos[.]com[.]do, hotels-online[.]com, svtperformance[.]com"
+    },
+    {
+      "cluster": 4,
+      "size": 40,
+      "phishing": 39,
+      "phishing_share": 0.975,
+      "density": 1.0,
+      "top_signal": "ip",
+      "top_ip": "15.197.148.33",
+      "example_names_defanged": "chanawlaw[.]com, gcplp[.]com, oldrectory[.]co"
+    },
+    {
+      "cluster": 5,
+      "size": 39,
+      "phishing": 37,
+      "phishing_share": 0.9487179487179487,
+      "density": 1.0,
+      "top_signal": "ip",
+      "top_ip": "13.248.169.48",
+      "example_names_defanged": "amazan[.]xyz, areyouahuman[.]com, backpage[.]online"
+    },
+    {
+      "cluster": 6,
+      "size": 36,
+      "phishing": 8,
+      "phishing_share": 0.2222222222222222,
+      "density": 0.5904761904761905,
+      "top_signal": "prefix24",
+      "top_ip": "141.193.213.10",
+      "example_names_defanged": "dialectsarchive[.]com, editionhotels[.]com, mauve[.]haus"
+    },
+    {
+      "cluster": 7,
+      "size": 35,
+      "phishing": 1,
+      "phishing_share": 0.02857142857142857,
+      "density": 0.2571428571428571,
+      "top_signal": "prefix24",
+      "top_ip": "151.101.1.91",
+      "example_names_defanged": "cherryred[.]co[.]uk, historicroyalpalaces[.]com, kayak[.]co[.]th"
+    },
+    {
+      "cluster": 8,
+      "size": 31,
+      "phishing": 7,
+      "phishing_share": 0.22580645161290322,
+      "density": 0.45806451612903226,
+      "top_signal": "prefix24",
+      "top_ip": "216.150.1.1",
+      "example_names_defanged": "gcicom[.]net, trashisfortossers[.]com, tryraz[.]com"
+    }
+  ],
+  "likelihood_ratio_phishing_vs_benign_in_clusters": 1.0045955023444757
+}

@@ -1,0 +1,56 @@
+corpus name rules AUC 0.6194
+live-subset rules AUC 0.6442
+cross-feed live rules AUC 0.7889
+{
+ "corpus_name_rules": {
+  "n": 100000,
+  "positives": 50000,
+  "roc_auc": 0.6194,
+  "score_mean_phishing": 4.8415,
+  "score_mean_benign": 1.8717
+ },
+ "subset_live_names": {
+  "n": 1401,
+  "phishing": 328,
+  "roc_auc": 0.6442
+ },
+ "subset_learned_weights_cv": {
+  "roc_auc": 0.6793
+ },
+ "subset_rule_group_auc": {
+  "name": 0.5108,
+  "registry": 0.4875,
+  "dns": 0.5666,
+  "campaign": 0.6345,
+  "all but registry (no RDAP)": 0.6489
+ },
+ "subset_all_rules_auc": 0.6441877116814039,
+ "cross_feed_openphish_live": {
+  "n": 1404,
+  "positives": 62,
+  "roc_auc": 0.7889
+ },
+ "cross_feed_openphish_name_rules_all": {
+  "n": 1578,
+  "positives": 78,
+  "roc_auc": 0.5824
+ },
+ "urlhaus_malware_live": {
+  "n": 226,
+  "recall_medium_plus": 0.3496,
+  "recall_high": 0.0664
+ },
+ "shared_platform_phishing_name_rules": {
+  "n": 3000,
+  "recall_medium_plus": 0.1553,
+  "recall_high": 0.0013
+ },
+ "ml_comparison": {
+  "lexical_ml_template_grouped_auc": 0.7878,
+  "enriched_ml_all_features_cv_auc": 0.7671,
+  "enriched_ml_crossfeed_auc": 0.7393
+ }
+}
+corpus_name_rules {'MEDIUM+ (score>=25)': {'recall': 0.034, 'fpr': 0.023, 'precision': 0.593, 'precision_at_1pct_prevalence': 0.015}, 'HIGH (score>=50)': {'recall': 0.0, 'fpr': 0.0, 'precision': 0.333, 'precision_at_1pct_prevalence': 0.005}}
+subset_live_names {'MEDIUM+ (score>=25)': {'recall': 0.29, 'fpr': 0.113, 'precision': 0.44, 'precision_at_1pct_prevalence': 0.025}, 'HIGH (score>=50)': {'recall': 0.055, 'fpr': 0.007, 'precision': 0.72, 'precision_at_1pct_prevalence': 0.078}}
+cross_feed_openphish_live {'MEDIUM+ (score>=25)': {'recall': 0.484, 'fpr': 0.112, 'precision': 0.167, 'precision_at_1pct_prevalence': 0.042}, 'HIGH (score>=50)': {'recall': 0.194, 'fpr': 0.006, 'precision': 0.6, 'precision_at_1pct_prevalence': 0.247}}

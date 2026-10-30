@@ -1,0 +1,35 @@
+{
+  "snapshot_date": "2026-10-06",
+  "collected_at_utc": "2026-10-06T17:30:28Z",
+  "files": {
+    "phishdb_domains.txt": {
+      "url": "https://raw.githubusercontent.com/Phishing-Database/Phishing.Database/master/phishing-domains-ACTIVE.txt",
+      "bytes": 11023128,
+      "sha256": "70c6c2e24e6b3484e7ace27b079723e55937bc1f4cbd98bea38a472ec8e37326",
+      "status": "ok"
+    },
+    "tranco_top1m.csv.zip": {
+      "url": "https://tranco-list.eu/top-1m.csv.zip",
+      "bytes": 9691515,
+      "sha256": "91a3e10e5dbcaf258a42db8a115ca66bd6e0dfd56d3b3e8ec92f2b08623a352f",
+      "status": "ok"
+    },
+    "urlhaus_recent.csv": {
+      "url": "https://urlhaus.abuse.ch/downloads/csv_recent/",
+      "bytes": 7265179,
+      "sha256": "716afda440ab20419aff3decb66af0afd8646aca81bda2147f69a3d1fe26446e",
+      "status": "ok"
+    },
+    "openphish_feed.txt": {
+      "url": "https://openphish.com/feed.txt",
+      "bytes": 16698,
+      "sha256": "0f6fb7f1851c922a5bdcf85368a0fb5cb1fd3d7dff7acbc161f96a8f908d04c1",
+      "status": "ok"
+    }
+  },
+  "tranco_list": {
+    "list_id": "56WKN",
+    "created_on": "2026-10-05T22:00:02.312077",
+    "available": true
+  }
+}

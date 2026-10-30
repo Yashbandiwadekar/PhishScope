@@ -1,0 +1,140 @@
+{
+  "snapshot": "2026-10-06",
+  "seed": 42,
+  "unit_of_analysis": "registrable name (eTLD+1, PSL private section included) for BOTH classes",
+  "phishdb_clean_entries": 386597,
+  "phishdb_share_on_shared_platform": 0.3303,
+  "phishdb_share_with_subdomain": 0.3897,
+  "phishdb_own_registered_entries": 258893,
+  "phishdb_own_registered_unique_names": 161605,
+  "phishdb_shared_platform_unique_names": 124601,
+  "tranco_deep_own_registered_candidates": 897806,
+  "corpus_rows": 100000,
+  "corpus_share_with_subdomain_pos_vs_neg": [
+    0.2723,
+    0.0
+  ],
+  "enrich_rows": 2400,
+  "openphish_hosts": 258,
+  "openphish_own_registered_not_in_training": 78,
+  "crossfeed_negatives": 1500,
+  "urlhaus_names_kept": 421,
+  "top_suffix_phish": [
+    [
+      "com",
+      21554
+    ],
+    [
+      "top",
+      2089
+    ],
+    [
+      "xyz",
+      1780
+    ],
+    [
+      "net",
+      1387
+    ],
+    [
+      "cc",
+      1074
+    ],
+    [
+      "org",
+      1042
+    ],
+    [
+      "tk",
+      957
+    ],
+    [
+      "cn",
+      814
+    ],
+    [
+      "com.br",
+      778
+    ],
+    [
+      "info",
+      751
+    ]
+  ],
+  "top_suffix_benign": [
+    [
+      "com",
+      20873
+    ],
+    [
+      "net",
+      2279
+    ],
+    [
+      "org",
+      2007
+    ],
+    [
+      "ru",
+      1804
+    ],
+    [
+      "de",
+      1355
+    ],
+    [
+      "nl",
+      968
+    ],
+    [
+      "it",
+      800
+    ],
+    [
+      "com.br",
+      735
+    ],
+    [
+      "co.uk",
+      664
+    ],
+    [
+      "uk",
+      606
+    ]
+  ],
+  "top_shared_platforms_in_phishing": [
+    [
+      "duckdns.org",
+      16449
+    ],
+    [
+      "pages.dev",
+      12683
+    ],
+    [
+      "webflow.io",
+      11742
+    ],
+    [
+      "vercel.app",
+      10653
+    ],
+    [
+      "github.io",
+      7497
+    ],
+    [
+      "ey.r.appspot.com",
+      7121
+    ],
+    [
+      "r2.dev",
+      5827
+    ],
+    [
+      "web.app",
+      4423
+    ]
+  ]
+}

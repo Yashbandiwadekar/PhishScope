@@ -1,0 +1,359 @@
+{
+  "subset_rows": 2400,
+  "dns_resolves_by_class": {
+    "benign": 0.8941666666666667,
+    "phishing": 0.2733333333333333
+  },
+  "rdap_not_found_by_class_before_filter": {
+    "benign": 0.0033333333333333335,
+    "phishing": 0.4875
+  },
+  "rows_dropped_not_resolving_or_deleted": {
+    "benign": 127,
+    "phishing": 872
+  },
+  "rows_after_resolving_filter": {
+    "benign": 1073,
+    "phishing": 328
+  },
+  "rdap_ok_by_class": {
+    "benign": 0.7548928238583411,
+    "phishing": 0.8079268292682927
+  },
+  "rdap_status_counts": {
+    "benign": {
+      "ok": 810,
+      "no_rdap_for_tld": 253,
+      "http_426": 7,
+      "missing": 3
+    },
+    "phishing": {
+      "ok": 265,
+      "no_rdap_for_tld": 60,
+      "missing": 2,
+      "http_426": 1
+    }
+  },
+  "B_ablation_cv": {
+    "Lexical only": {
+      "auc_mean": 0.5583397737518847,
+      "auc_sd": 0.005856487153200504,
+      "tpr_at_fpr_1pct": 0.01524390243902439,
+      "fpr_at_tpr_95pct": 0.9431500465983225,
+      "pr_auc": 0.2815665105230757
+    },
+    "DNS only": {
+      "auc_mean": 0.7372531804302199,
+      "auc_sd": 0.003986066512406107,
+      "tpr_at_fpr_1pct": 0.042682926829268296,
+      "fpr_at_tpr_95pct": 0.7576887232059646,
+      "pr_auc": 0.46233726964625055
+    },
+    "Hosting network only": {
+      "auc_mean": 0.6988389251320287,
+      "auc_sd": 0.0019265197893528524,
+      "tpr_at_fpr_1pct": 0.06402439024390244,
+      "fpr_at_tpr_95pct": 0.8704566635601119,
+      "pr_auc": 0.4376590044903477
+    },
+    "RDAP registration only": {
+      "auc_mean": 0.6047500928177968,
+      "auc_sd": 0.007188450508821005,
+      "tpr_at_fpr_1pct": 0.027439024390243903,
+      "fpr_at_tpr_95pct": 0.869524697110904,
+      "pr_auc": 0.32495479641823194
+    },
+    "Lexical + DNS": {
+      "auc_mean": 0.7141372869926276,
+      "auc_sd": 0.00221246549301803,
+      "tpr_at_fpr_1pct": 0.039634146341463415,
+      "fpr_at_tpr_95pct": 0.7558247903075489,
+      "pr_auc": 0.4268479933488062
+    },
+    "Lexical + Hosting": {
+      "auc_mean": 0.6686267322831663,
+      "auc_sd": 0.0014531093849218595,
+      "tpr_at_fpr_1pct": 0.07317073170731707,
+      "fpr_at_tpr_95pct": 0.940354147250699,
+      "pr_auc": 0.43811865525615545
+    },
+    "Lexical + RDAP": {
+      "auc_mean": 0.6194863387357078,
+      "auc_sd": 0.008785042061062263,
+      "tpr_at_fpr_1pct": 0.024390243902439025,
+      "fpr_at_tpr_95pct": 0.8741845293569431,
+      "pr_auc": 0.3405735929224999
+    },
+    "All features": {
+      "auc_mean": 0.7670623735594299,
+      "auc_sd": 0.004332555545490681,
+      "tpr_at_fpr_1pct": 0.06707317073170732,
+      "fpr_at_tpr_95pct": 0.6943150046598322,
+      "pr_auc": 0.5089247362124212
+    },
+    "All features, no age features": {
+      "auc_mean": 0.7541995317436866,
+      "auc_sd": 0.004389880563711159,
+      "tpr_at_fpr_1pct": 0.08841463414634146,
+      "fpr_at_tpr_95pct": 0.7371854613233924,
+      "pr_auc": 0.5099834927279215
+    }
+  },
+  "B_all_features_rdap_available_only": {
+    "n": 1075,
+    "positives": 265,
+    "auc_mean": 0.7834319434738721,
+    "auc_sd": 0.003194277554325358
+  },
+  "B_no_age_rdap_available_only": {
+    "auc_mean": 0.7648388850065998,
+    "auc_sd": 0.0027105242089437934
+  },
+  "B_age_bands": {
+    "registered < 1 year ago": {
+      "n": 181,
+      "phishing_share": 0.19337016574585636,
+      "auc_all_features": 0.7888454011741682,
+      "auc_no_age_features": 0.7311154598825831
+    },
+    "1-3 years": {
+      "n": 101,
+      "phishing_share": 0.36633663366336633,
+      "auc_all_features": 0.7681587837837838,
+      "auc_no_age_features": 0.7529560810810811
+    },
+    "3-8 years": {
+      "n": 172,
+      "phishing_share": 0.29069767441860467,
+      "auc_all_features": 0.7736065573770492,
+      "auc_no_age_features": 0.749344262295082
+    },
+    "> 8 years": {
+      "n": 604,
+      "phishing_share": 0.22682119205298013,
+      "auc_all_features": 0.7964019443880023,
+      "auc_no_age_features": 0.8009034214351585
+    }
+  },
+  "final_enriched_threshold_at_1pct_fpr_oof": 0.8604793826847651,
+  "permutation_importance_auc_drop": [
+    [
+      "txt_count",
+      0.0746578432847044
+    ],
+    [
+      "ttl",
+      0.05087231162580832
+    ],
+    [
+      "registration_years",
+      0.016874718002707113
+    ],
+    [
+      "asn",
+      0.01202436456610012
+    ],
+    [
+      "expires_in_days",
+      0.0093698300496315
+    ],
+    [
+      "dnssec",
+      0.008715596330275199
+    ],
+    [
+      "n_vulns",
+      0.007692886148292899
+    ],
+    [
+      "longest_consonant_run",
+      0.0052489096104677115
+    ],
+    [
+      "n_ports",
+      0.004429237479320158
+    ],
+    [
+      "entropy",
+      0.004256279139720209
+    ],
+    [
+      "n_ip_hostnames",
+      0.002737253722364219
+    ],
+    [
+      "days_since_change",
+      0.0025191758159121445
+    ],
+    [
+      "n_hyphens",
+      0.0023311776206948243
+    ],
+    [
+      "n_ips",
+      0.0020830200030079295
+    ],
+    [
+      "ns_count",
+      0.0016919837569558949
+    ],
+    [
+      "has_dmarc",
+      0.0011881485937734527
+    ],
+    [
+      "rdap_ok",
+      0.0011580688825387098
+    ],
+    [
+      "idb_cloud_tag",
+      0.0009926304707474354
+    ],
+    [
+      "port_22",
+      0.0008422319145735546
+    ],
+    [
+      "has_spf",
+      0.000812152203338834
+    ],
+    [
+      "age_days",
+      0.0006843134305910437
+    ],
+    [
+      "port_443",
+      0.0003534366070085837
+    ],
+    [
+      "asn_cc",
+      0.0002481576176868061
+    ],
+    [
+      "ns_provider",
+      6.0159422469518994e-05
+    ],
+    [
+      "is_punycode",
+      0.0
+    ],
+    [
+      "n_parts",
+      0.0
+    ],
+    [
+      "status_hold_or_lock",
+      0.0
+    ],
+    [
+      "brand_typosquat",
+      0.0
+    ],
+    [
+      "brand_contained",
+      0.0
+    ],
+    [
+      "port_80",
+      -7.519927808707916e-06
+    ],
+    [
+      "has_www",
+      -1.503985561740473e-05
+    ],
+    [
+      "n_suspicious_words",
+      -9.023913370432845e-05
+    ],
+    [
+      "n_digits",
+      -0.00013535870055647603
+    ],
+    [
+      "mx_count",
+      -0.00042863588509555183
+    ],
+    [
+      "max_part_len",
+      -0.0008723116258084306
+    ],
+    [
+      "longest_digit_run",
+      -0.001233268160625689
+    ],
+    [
+      "digit_ratio",
+      -0.0016017446232516664
+    ],
+    [
+      "unique_char_ratio",
+      -0.0021130997142427945
+    ],
+    [
+      "has_caa",
+      -0.0030681305459467787
+    ],
+    [
+      "vowel_share",
+      -0.0033839675139118895
+    ],
+    [
+      "registrar",
+      -0.004617235674537567
+    ],
+    [
+      "brand_edit_distance",
+      -0.004978192209354815
+    ],
+    [
+      "len_label",
+      -0.00520379004361563
+    ],
+    [
+      "suffix",
+      -0.007903444126936398
+    ]
+  ],
+  "C_cross_feed_enriched": {
+    "n": 1404,
+    "positives": 62,
+    "roc_auc": 0.7392553242632566,
+    "pr_auc": 0.106513199312556,
+    "threshold": 0.8604793826847651,
+    "tp": 1,
+    "fp": 10,
+    "fn": 61,
+    "tn": 1332,
+    "accuracy": 0.9494301994301995,
+    "precision": 0.09090909090909091,
+    "recall": 0.016129032258064516,
+    "f1": 0.0273972602739726,
+    "fpr": 0.007451564828614009,
+    "tpr_at_fpr_1pct": 0.016129032258064516,
+    "fpr_at_tpr_95pct": 0.7757078986587184,
+    "precision_at_1pct_prevalence_at_thr": 0.021396001403016486,
+    "precision_at_5pct_prevalence_at_thr": 0.10227099527511051,
+    "roc_auc_ci95": [
+      0.6743518126611526,
+      0.7988324168769497
+    ],
+    "recall_ci95_wilson": [
+      0.002852793692240394,
+      0.0858692300738892
+    ],
+    "fpr_ci95_wilson": [
+      0.004052499445941187,
+      0.013662512484140334
+    ],
+    "resolving_share": 0.8897338403041825
+  },
+  "D_urlhaus_enriched": {
+    "n_resolving": 226,
+    "flagged": 5,
+    "recall": 0.022123893805309734,
+    "recall_ci95_wilson": [
+      0.00948601719324899,
+      0.05073632723874243
+    ]
+  }
+}

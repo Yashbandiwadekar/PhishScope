@@ -1,0 +1,159 @@
+{
+  "names_total": 8400,
+  "names_with_dns": 4357,
+  "phishing_with_dns": 1479,
+  "benign_with_dns": 2878,
+  "edges": 5005,
+  "linked_nodes": 1213,
+  "edge_group_stats": {
+    "ip": {
+      "groups_used": 295,
+      "hub_groups_pruned": 1
+    },
+    "prefix24": {
+      "groups_used": 0,
+      "hub_groups_pruned": 1
+    },
+    "nsset": {
+      "groups_used": 185,
+      "hub_groups_pruned": 0
+    },
+    "bulkreg": {
+      "groups_used": 0,
+      "hub_groups_pruned": 0
+    }
+  },
+  "common_dns_providers_ignored": [
+    "afternic.com",
+    "akam.net",
+    "alidns.com",
+    "azure-dns.com",
+    "beget.com",
+    "cloudflare.com",
+    "cscdns.net",
+    "digitalocean.com",
+    "dns-parking.com",
+    "dnsmadeeasy.com",
+    "domaincontrol.com",
+    "dreamhost.com",
+    "googledomains.com",
+    "hichina.com",
+    "hostgator.com",
+    "namebrightdns.com",
+    "nic.ru",
+    "ovh.net",
+    "registrar-servers.com",
+    "share-dns.com",
+    "siteground.net",
+    "spaceship.net",
+    "wixdns.net",
+    "worldnic.com",
+    "xserver.jp"
+  ],
+  "share_of_names_linked_by_signal": {
+    "ip": {
+      "phishing": 0.25625422582826235,
+      "benign": 0.11605281445448228
+    },
+    "prefix24": {
+      "phishing": 0.0,
+      "benign": 0.0
+    },
+    "nsset": {
+      "phishing": 0.18052738336713997,
+      "benign": 0.12612925642807504
+    },
+    "bulkreg": {
+      "phishing": 0.0,
+      "benign": 0.0
+    }
+  },
+  "clusters_ge3": 138,
+  "names_in_clusters_ge3": 915,
+  "baseline_phishing_share_in_sample": 0.33945375258205185,
+  "phishing_share_inside_clusters": 0.5202185792349727,
+  "pure_phishing_clusters_share": 0.2318840579710145,
+  "largest_clusters": [
+    {
+      "cluster": 1,
+      "size": 40,
+      "phishing": 39,
+      "phishing_share": 0.975,
+      "density": 1.0,
+      "top_signal": "ip",
+      "top_ip": "15.197.148.33",
+      "example_names_defanged": "berkshirepicnicco[.]com, boxedbash[.]com, joeyperrymartialarts[.]org"
+    },
+    {
+      "cluster": 2,
+      "size": 39,
+      "phishing": 37,
+      "phishing_share": 0.9487179487179487,
+      "density": 1.0,
+      "top_signal": "ip",
+      "top_ip": "13.248.169.48",
+      "example_names_defanged": "blackicecoolers[.]com, farnoush[.]com, g1t[.]top"
+    },
+    {
+      "cluster": 3,
+      "size": 28,
+      "phishing": 5,
+      "phishing_share": 0.17857142857142858,
+      "density": 1.0,
+      "top_signal": "ip",
+      "top_ip": "23.227.38.32",
+      "example_names_defanged": "kiiroo[.]com, threadsandmotifs[.]com, waterdrop[.]fr"
+    },
+    {
+      "cluster": 4,
+      "size": 23,
+      "phishing": 22,
+      "phishing_share": 0.9565217391304348,
+      "density": 1.0,
+      "top_signal": "ip",
+      "top_ip": "13.248.213.45",
+      "example_names_defanged": "alnajahh[.]com, bet365-sp[.]com, meinfejla[.]com"
+    },
+    {
+      "cluster": 5,
+      "size": 23,
+      "phishing": 20,
+      "phishing_share": 0.8695652173913043,
+      "density": 0.9169960474308301,
+      "top_signal": "ip",
+      "top_ip": "15.197.225.128",
+      "example_names_defanged": "barberpkg[.]com, canadawaterfilters[.]ca, protocol25[.]com"
+    },
+    {
+      "cluster": 6,
+      "size": 22,
+      "phishing": 6,
+      "phishing_share": 0.2727272727272727,
+      "density": 0.6883116883116883,
+      "top_signal": "ip",
+      "top_ip": "141.193.213.10",
+      "example_names_defanged": "dialectsarchive[.]com, millennialmarketing[.]com, rush[.]com"
+    },
+    {
+      "cluster": 7,
+      "size": 19,
+      "phishing": 16,
+      "phishing_share": 0.8421052631578947,
+      "density": 1.0,
+      "top_signal": "ip",
+      "top_ip": "185.230.63.107",
+      "example_names_defanged": "archii[.]org, flexdanceinc[.]co[.]uk, hhe[.]net[.]au"
+    },
+    {
+      "cluster": 8,
+      "size": 19,
+      "phishing": 7,
+      "phishing_share": 0.3684210526315789,
+      "density": 0.47953216374269003,
+      "top_signal": "ip",
+      "top_ip": "76.76.21.21",
+      "example_names_defanged": "bakkerelkhuizen[.]com, jdskateshop[.]com[.]br, newneek[.]co"
+    }
+  ],
+  "likelihood_ratio_phishing_vs_benign_in_clusters": 2.109915429528971
+}
